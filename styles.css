@@ -1959,31 +1959,11 @@ input:focus-visible {
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .hero-title {
-    font-size: 32px;
-    text-align: left;
-  }
-
-  .hero-left,
-  .hero-right {
-    width: 100%;
-  }
-
-  .hero-left {
-    order: 2;
-  }
-
-  .hero-right {
-    order: 1;
+    gap: 30px;
   }
 
   .hero-img-main {
-    height: 350px;
+    height: 380px;
   }
 
   .trusted-section {
@@ -2147,6 +2127,38 @@ input:focus-visible {
 @media (max-width: 768px) {
   .trusted-logo-item:nth-last-child(-n+3) {
     display: none;
+  }
+}
+
+/* ───── Responsive: Hero stacks at mobile (max-width: 768px) ───── */
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-img-main {
+    height: 350px;
   }
 }
 
